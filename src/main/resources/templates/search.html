@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Code Search</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form action="/api/search">
+    Enter keyword:<br/>
+    <input type="text" name="term" value=""/>
+    <br/>
+    <input type="radio" name="searchType" value="any" checked="true"> Any </input><br/>
+    <input type="radio" name="searchType" value="fileName"> File Name</input>
+    <!--
+    <br/>
+    <input type="radio" name="searchType" value="function" disabled="true"> Function Name</input>
+    -->
+    <br/><br/>
+    <input type="submit" value="Search"/>
+</form>
+</body>
+</html>
